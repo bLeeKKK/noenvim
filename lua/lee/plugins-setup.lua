@@ -31,6 +31,8 @@ return packer.startup(function(use)
   -- packer can manage itself
   use("wbthomason/packer.nvim")
 
+  use("nvim-lua/popup.nvim")
+
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
@@ -58,7 +60,8 @@ return packer.startup(function(use)
   -- fuzzy finding w/ telescope
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- 依赖关系以获得更好的排序性能
   use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- 模糊查找器
-  use({ "nvim-telescope/telescope-live-grep-args.nvim" }) -- 模糊查找器：全局文字搜索插件
+  -- use({ "nvim-telescope/telescope-live-grep-args.nvim" }) -- 模糊查找器：全局文字搜索插件
+  use({ "nvim-telescope/telescope-media-files.nvim" })
 
   -- autocompletion
   use("hrsh7th/nvim-cmp") -- completion plugin

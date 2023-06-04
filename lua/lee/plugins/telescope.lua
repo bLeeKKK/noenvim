@@ -11,10 +11,10 @@ if not actions_setup then
 end
 
 -- import telescope actions safely
-local lga_actions_setup, lga_actions = pcall(require, "telescope-live-grep-args.actions")
-if not lga_actions_setup then
-  return
-end
+-- local lga_actions_setup, lga_actions = pcall(require, "telescope-live-grep-args.actions")
+-- if not lga_actions_setup then
+--   return
+-- end
 
 -- configure telescope
 telescope.setup({
@@ -29,17 +29,25 @@ telescope.setup({
     },
   },
   extension = {
-    live_grep_args = {
-      auto_quoting = true, -- enable/disable auto-quoting
-      -- define mappings, e.g.
-      mappings = { -- extend mappings
-        i = {
-          ["<C-k>"] = lga_actions.quote_prompt(),
-          ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
-        },
-      },
-    },
+    -- live_grep_args = {
+    --   auto_quoting = true, -- enable/disable auto-quoting
+    --   -- define mappings, e.g.
+    --   mappings = { -- extend mappings
+    --     i = {
+    --       ["<C-k>"] = lga_actions.quote_prompt(),
+    --       ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+    --     },
+    --   },
+    -- },
+    -- media_files = {
+    --   -- filetypes whitelist
+    --   -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+    --   filetypes = { "png", "webp", "jpg", "jpeg" },
+    --   -- find command (defaults to `fd`)
+    --   find_cmd = "rg",
+    -- },
   },
 })
 
+-- telescope.load_extension("media_files")
 telescope.load_extension("fzf")
