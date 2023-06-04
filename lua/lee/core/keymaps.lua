@@ -20,6 +20,10 @@ keymap.set("n", "x", '"_x')
 -- 使用p粘贴的时候，不把覆盖的文字粘贴到剪贴板
 keymap.set("v", "p", '"_dP')
 
+-- 切换 buffers
+keymap.set("n", "<C-Tab>", ":bnext<CR>")
+keymap.set("n", "<C-S-Tab>", ":bprevious<CR>")
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
