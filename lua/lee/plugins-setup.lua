@@ -61,7 +61,7 @@ return packer.startup(function(use)
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- 依赖关系以获得更好的排序性能
   use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- 模糊查找器
   -- use({ "nvim-telescope/telescope-live-grep-args.nvim" }) -- 模糊查找器：全局文字搜索插件
-  use({ "nvim-telescope/telescope-media-files.nvim" })
+  -- use({ "nvim-telescope/telescope-media-files.nvim" }) --  全局媒体搜索插件
 
   -- autocompletion
   use("hrsh7th/nvim-cmp") -- completion plugin
