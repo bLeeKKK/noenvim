@@ -54,7 +54,7 @@ return packer.startup(function(use)
   use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
-  -- commenting with gc
+  --  打注释
   use("numToStr/Comment.nvim")
 
   -- file explorer
@@ -114,6 +114,7 @@ return packer.startup(function(use)
   })
   use("p00f/nvim-ts-rainbow")
   use("nvim-treesitter/playground")
+  use("JoosepAlviste/nvim-ts-context-commentstring")
 
   -- 自动关闭
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...

@@ -16,6 +16,8 @@ require("lee.plugins.treesitter")
 require("lee.plugins.gitsigns")
 require("lee.plugins.toggleterm")
 require("lee.plugins.copilot")
+require("lee.plugins.cleverf")
+require("lee.plugins.comment")
 
 -- 打印信息
 print("Lee's NeoVim config loaded!")
