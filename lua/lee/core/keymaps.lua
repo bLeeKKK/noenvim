@@ -58,15 +58,19 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 -- telescope git commands (not on youtube nvim video)
-keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
-keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
-keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
-keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
-keymap.set("n", "<leader>gg", ":lua _toggle_lazygit()<CR>") -- list current changes per file with diff preview ["gs" for git status]
+-- keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
+-- keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
+-- keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
+-- keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
 
 --  终端
-keymap.set("n", "<A-\\>", "<Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端
-keymap.set("t", "<A-\\>", "<Esc><Cmd>ToggleTerm<CR>") -- 关闭啊终端
+keymap.set("n", "<C-f>", "<Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（普通模式）
+keymap.set("i", "<C-f>", "<Esc><Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（编辑模式）
+keymap.set("n", "<C-`>", ":ToggleTerm direction=horizontal<CR>") -- 打开底部终端（普通模式）
+keymap.set("i", "<C-`>", "<Esc><Cmd>ToggleTerm direction=horizontal<CR>") -- 打开底部终端（编辑模式）
+keymap.set("t", "<Esc>", "<C-\\><C-n>") -- 切换终端模式
+keymap.set("t", "<C-`>", "<Esc><Cmd>ToggleTerm<CR>") -- 关闭终端
+keymap.set("n", "<leader>gg", ":lua _toggle_lazygit()<CR>") --  打开lazygit插件
