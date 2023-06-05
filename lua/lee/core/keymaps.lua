@@ -25,6 +25,12 @@ keymap.set("v", "p", '"_dP')
 keymap.set("n", "<C-Tab>", ":bnext<CR>")
 keymap.set("n", "<C-S-Tab>", ":bprevious<CR>")
 
+-- Resize with arrows
+keymap.set("n", "<A-Up>", ":resize -2<CR>")
+keymap.set("n", "<A-Down>", ":resize +2<CR>")
+keymap.set("n", "<A-Left>", ":vertical resize -2<CR>")
+keymap.set("n", "<A-Right>", ":vertical resize +2<CR>")
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
