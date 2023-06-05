@@ -132,6 +132,9 @@ return packer.startup(function(use)
     end,
   })
 
+  --  加强版的f
+  -- use({ "rhysd/clever-f.vim" })
+
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
