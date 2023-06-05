@@ -25,14 +25,15 @@ local status, packer = pcall(require, "packer")
 if not status then
   return
 end
+
 -- Have packer use a popup window
-packer.init({
-  display = {
-    open_fn = function()
-      return require("packer.util").float({ border = "rounded" })
-    end,
-  },
-})
+-- packer.init({
+--   display = {
+--     open_fn = function()
+--       return require("packer.util").float({ border = "rounded" })
+--     end,
+--   },
+-- })
 
 -- add list of plugins to install
 return packer.startup(function(use)
@@ -112,8 +113,9 @@ return packer.startup(function(use)
     end,
   })
   use("p00f/nvim-ts-rainbow")
+  use("nvim-treesitter/playground")
 
-  -- auto closing
+  -- 自动关闭
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
@@ -122,7 +124,13 @@ return packer.startup(function(use)
 
   -- copilot 配置
   use({ "zbirenbaum/copilot.lua" })
-  use({ "zbirenbaum/copilot-cmp" })
+  use({
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function()
+      require("copilot_cmp").setup()
+    end,
+  })
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
