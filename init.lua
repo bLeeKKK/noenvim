@@ -18,6 +18,7 @@ require("lee.plugins.toggleterm")
 require("lee.plugins.copilot")
 require("lee.plugins.cleverf")
 require("lee.plugins.comment")
+require("lee.plugins.bufferline")
 
 -- 打印信息
 print("Lee's NeoVim config loaded!")

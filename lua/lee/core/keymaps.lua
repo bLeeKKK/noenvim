@@ -22,8 +22,8 @@ keymap.set("n", "x", '"_x')
 keymap.set("v", "p", '"_dP')
 
 -- 切换 buffers
-keymap.set("n", "<C-Tab>", ":bnext<CR>")
-keymap.set("n", "<C-S-Tab>", ":bprevious<CR>")
+keymap.set("n", "<C-Tab>", ":BufferLineCycleNext<CR>")
+keymap.set("n", "<C-S-Tab>", ":BufferLineCyclePrev<CR>")
 
 -- Resize with arrows
 keymap.set("n", "<A-Up>", ":resize -2<CR>")
@@ -73,6 +73,7 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
 
 --  终端
+vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
 keymap.set("n", "<C-f>", "<Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（普通模式）
 keymap.set("i", "<C-f>", "<Esc><Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（编辑模式）
 keymap.set("n", "<C-`>", ":ToggleTerm direction=horizontal<CR>") -- 打开底部终端（普通模式）
