@@ -77,6 +77,6 @@ keymap.set("n", "<C-f>", "<Cmd>ToggleTerm direction=float<CR>") -- 打开浮动�
 keymap.set("i", "<C-f>", "<Esc><Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（编辑模式）
 keymap.set("n", "<C-`>", ":ToggleTerm direction=horizontal<CR>") -- 打开底部终端（普通模式）
 keymap.set("i", "<C-`>", "<Esc><Cmd>ToggleTerm direction=horizontal<CR>") -- 打开底部终端（编辑模式）
-keymap.set("t", "<Esc>", "<C-\\><C-n>") -- 切换终端模式
+keymap.set("t", "<C-q>", "<C-\\><C-n>") -- 切换终端模式
 keymap.set("t", "<C-`>", "<Esc><Cmd>ToggleTerm<CR>") -- 关闭终端
 keymap.set("n", "<leader>gg", ":lua _toggle_lazygit()<CR>") --  打开lazygit插件

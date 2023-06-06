@@ -7,6 +7,10 @@ _G._toggle_lazygit = function()
         direction = "float",
         close_on_exit = true,
         hidden = true,
+
+        float_opts = {
+          border = "double",
+        },
       })
     end
     _lazygit:toggle()
