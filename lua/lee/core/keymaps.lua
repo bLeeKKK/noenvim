@@ -24,6 +24,8 @@ keymap.set("v", "p", '"_dP')
 -- 切换 buffers
 keymap.set("n", "<C-Tab>", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<C-S-Tab>", ":BufferLineCyclePrev<CR>")
+keymap.set("n", "<C-w>", ":Bdelete<CR>") -- 关闭当前窗口
+keymap.set("n", "<C-o>", ":bufdo :Bdelete<CR>") -- 关闭全部
 
 -- Resize with arrows
 keymap.set("n", "<A-Up>", ":resize -2<CR>")

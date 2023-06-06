@@ -138,6 +138,11 @@ return packer.startup(function(use)
 
   -- 切换窗口
   use("akinsho/bufferline.nvim")
+  use("moll/vim-bbye") -- 优化关闭buffer的时候，不关闭nvim
+  -- use({ "ojroques/nvim-bufdel" }) -- 优化关闭buffer
+
+  -- 多光标操作
+  use("mg979/vim-visual-multi")
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
