@@ -6,3 +6,6 @@ end
 
 -- configure/enable gitsigns
 gitsigns.setup()
+
+-- 参考文档
+-- https://github.com/lewis6991/gitsigns.nvim
