@@ -1,4 +1,3 @@
-require("lee.core.helpers")
 -- set leader key to space
 vim.g.mapleader = " "
 

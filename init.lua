@@ -1,7 +1,15 @@
 require("lee.plugins-setup")
+
+-- 核心配置
+require("lee.core.helpers")
 require("lee.core.options")
 require("lee.core.keymaps")
 require("lee.core.colorscheme")
+
+-- 工具
+require("lee.utils.im-select")
+
+-- 插件配置
 require("lee.plugins.comment")
 require("lee.plugins.nvim-tree")
 require("lee.plugins.lualine")
