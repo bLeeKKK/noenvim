@@ -27,6 +27,8 @@ require("lee.plugins.copilot")
 require("lee.plugins.cleverf")
 require("lee.plugins.comment")
 require("lee.plugins.bufferline")
+require("lee.plugins.indent-blankline")
+require("lee.plugins.accelerated-jk")
 
 -- 打印信息
 print("Lee's NeoVim config loaded!")

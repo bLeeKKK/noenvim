@@ -85,3 +85,7 @@ keymap.set("n", "<leader>gg", ":lua _toggle_lazygit()<CR>") --  打开lazygit插
 
 -- clever-f 插件
 -- keymap.set("n", ";", ":lua vim.api.nvim_replace_termcodes('<Plug>(clever-f-repeat-forward)', true, true, true)<CR>")
+
+-- 极速jk运动 accelerated-jk
+keymap.set("n", "j", "<Plug>(accelerated_jk_gj)", {})
+keymap.set("n", "k", "<Plug>(accelerated_jk_gk)", {})

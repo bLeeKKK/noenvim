@@ -172,6 +172,12 @@ return packer.startup(function(use)
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+  -- 缩紧的线，和空格的提示
+  use("lukas-reineke/indent-blankline.nvim")
+
+  -- 极速jk运动
+  use({ "rainbowhxch/accelerated-jk.nvim" })
+
   if packer_bootstrap then
     require("packer").sync()
   end
