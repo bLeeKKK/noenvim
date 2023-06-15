@@ -82,3 +82,6 @@ keymap.set("i", "<C-`>", "<Esc><Cmd>ToggleTerm direction=horizontal<CR>") -- 打
 keymap.set("t", "<C-q>", "<C-\\><C-n>") -- 切换终端模式
 keymap.set("t", "<C-`>", "<Esc><Cmd>ToggleTerm<CR>") -- 关闭终端
 keymap.set("n", "<leader>gg", ":lua _toggle_lazygit()<CR>") --  打开lazygit插件
+
+-- clever-f 插件
+-- keymap.set("n", ";", ":lua vim.api.nvim_replace_termcodes('<Plug>(clever-f-repeat-forward)', true, true, true)<CR>")

@@ -144,6 +144,31 @@ return packer.startup(function(use)
   -- 多光标操作
   use("mg979/vim-visual-multi")
 
+  -- debugger 操作
+  -- use({
+  --   "nvim-neotest/neotest",
+  --   requires = {
+  --     "haydenmeade/neotest-jest",
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-treesitter/nvim-treesitter",
+  --     "antoinemadec/FixCursorHold.nvim",
+  --   },
+  --   config = function()
+  --     require("neotest").setup({
+  --       adapters = {
+  --         require("neotest-jest")({
+  --           jestCommand = "npm test --",
+  --           jestConfigFile = "custom.jest.config.ts",
+  --           env = { CI = true },
+  --           cwd = function(path)
+  --             return vim.fn.getcwd()
+  --           end,
+  --         }),
+  --       },
+  --     })
+  --   end,
+  -- })
+
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
