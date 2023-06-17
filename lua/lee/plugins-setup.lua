@@ -178,6 +178,9 @@ return packer.startup(function(use)
   -- 极速jk运动
   use({ "rainbowhxch/accelerated-jk.nvim" })
 
+  -- 查看代码中的颜色
+  use("NvChad/nvim-colorizer.lua")
+
   if packer_bootstrap then
     require("packer").sync()
   end

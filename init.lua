@@ -29,6 +29,7 @@ require("lee.plugins.comment")
 require("lee.plugins.bufferline")
 require("lee.plugins.indent-blankline")
 require("lee.plugins.accelerated-jk")
+require("lee.plugins.colorizer")
 
 -- 打印信息
 print("Lee's NeoVim config loaded!")
