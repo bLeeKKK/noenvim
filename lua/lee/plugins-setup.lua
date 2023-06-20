@@ -181,6 +181,20 @@ return packer.startup(function(use)
   -- 查看代码中的颜色
   use("NvChad/nvim-colorizer.lua")
 
+  -- 移动代码
+  use("matze/vim-move")
+
+  -- 横向快速移动光标
+  use({
+    "jinh0/eyeliner.nvim",
+    config = function()
+      require("eyeliner").setup({
+        highlight_on_key = true, -- 仅在按下键后显示高光
+        dim = true, -- 如果设置为true，则将所有其他字符调暗(建议!)
+      })
+    end,
+  })
+
   if packer_bootstrap then
     require("packer").sync()
   end
