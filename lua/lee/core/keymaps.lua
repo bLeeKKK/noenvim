@@ -1,6 +1,7 @@
 -- set leader key to space
 vim.g.mapleader = " "
 
+local opts = { noremap = true, silent = true }
 local keymap = vim.keymap -- for conciseness
 
 ---------------------
@@ -89,3 +90,17 @@ keymap.set("n", "<leader>gg", ":lua _toggle_lazygit()<CR>") --  打开lazygit插
 -- 极速jk运动 accelerated-jk
 keymap.set("n", "j", "<Plug>(accelerated_jk_gj)", {})
 keymap.set("n", "k", "<Plug>(accelerated_jk_gk)", {})
+
+-- Normal-mode commands
+keymap.set("n", "<S-j>", ":MoveLine(1)<CR>", opts)
+keymap.set("n", "<S-k>", ":MoveLine(-1)<CR>")
+keymap.set("n", "<S-h>", ":MoveHChar(-1)<CR>", opts)
+keymap.set("n", "<S-l>", ":MoveHChar(1)<CR>", opts)
+keymap.set("n", "<leader>wf", ":MoveWord(1)<CR>", opts)
+keymap.set("n", "<leader>wb", ":MoveWord(-1)<CR>", opts)
+
+-- Visual-mode commands
+keymap.set("v", "<S-j>", ":MoveBlock(1)<CR>", opts)
+keymap.set("v", "<S-k>", ":MoveBlock(-1)<CR>", opts)
+keymap.set("v", "<S-h>", ":MoveHBlock(-1)<CR>", opts)
+keymap.set("v", "<S-l>", ":MoveHBlock(1)<CR>", opts)

@@ -182,7 +182,8 @@ return packer.startup(function(use)
   use("NvChad/nvim-colorizer.lua")
 
   -- 移动代码
-  use("matze/vim-move")
+  -- use("matze/vim-move")
+  use("fedepujol/move.nvim")
 
   -- 横向快速移动光标
   use({
