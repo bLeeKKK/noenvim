@@ -30,6 +30,8 @@ require("lee.plugins.bufferline")
 require("lee.plugins.indent-blankline")
 require("lee.plugins.accelerated-jk")
 require("lee.plugins.colorizer")
+require("lee.plugins.hop")
+-- require("lee.plugins.tabout")
 
 -- 打印信息
 print("Lee's NeoVim config loaded!")

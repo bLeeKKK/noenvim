@@ -196,6 +196,19 @@ return packer.startup(function(use)
     end,
   })
 
+  -- 全局快速移动光标
+  use({
+    "phaazon/hop.nvim",
+    branch = "v2", -- optional but strongly recommended
+  })
+
+  -- 块间快速移动光标
+  use({
+    "abecodes/tabout.nvim",
+    wants = { "nvim-treesitter" }, -- or require if not used so far
+    after = { "nvim-cmp" }, -- if a completion plugin is using tabs load it before
+  })
+
   if packer_bootstrap then
     require("packer").sync()
   end
