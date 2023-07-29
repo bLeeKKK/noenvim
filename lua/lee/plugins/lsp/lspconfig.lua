@@ -24,18 +24,18 @@ local on_attach = function(client, bufnr)
   local opts = { noremap = true, silent = true, buffer = bufnr }
 
   -- set keybinds
-  keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
+  keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- 显示定义、引用
   keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
-  keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
-  keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
-  keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
-  keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
-  keymap.set("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
-  keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
-  keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
-  keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
-  keymap.set("n", "gk", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
-  keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+  keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- 查看定义并在窗口中进行编辑
+  keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- 转到实现
+  keymap.set("n", "gk", "<cmd>Lspsaga hover_doc<CR>", opts) -- 显示光标下内容的文档
+  keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- 跳转到缓冲区中的上一个诊断
+  keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- 跳转到缓冲区中的下一个诊断
+  keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- 智能重命名
+  keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- 查看可用的代码操作
+  keymap.set("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- 显示行诊断信息
+  keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- 显示光标的诊断信息
+  keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- 见右手边的轮廓
 
   -- typescript specific keymaps (e.g. rename file and update imports)
   if client.name == "tsserver" then
