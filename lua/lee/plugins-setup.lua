@@ -13,7 +13,7 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins
 -- when file is saved
-vim.cmd([[ 
+vim.cmd([[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
@@ -112,7 +112,8 @@ return packer.startup(function(use)
       ts_update()
     end,
   })
-  use("p00f/nvim-ts-rainbow")
+  -- use("p00f/nvim-ts-rainbow")
+  use("HiPhish/nvim-ts-rainbow2")
   use("nvim-treesitter/playground")
   use("JoosepAlviste/nvim-ts-context-commentstring")
 
