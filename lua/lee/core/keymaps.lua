@@ -91,8 +91,8 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 
 --  终端
 vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
-keymap.set("n", "<C-f>", "<Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（普通模式）
-keymap.set("i", "<C-f>", "<Esc><Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（编辑模式）
+-- keymap.set("n", "<C-f>", "<Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（普通模式）
+-- keymap.set("i", "<C-f>", "<Esc><Cmd>ToggleTerm direction=float<CR>") -- 打开浮动终端（编辑模式）
 keymap.set("n", "<C-`>", ":ToggleTerm direction=horizontal<CR>") -- 打开底部终端（普通模式）
 keymap.set("i", "<C-`>", "<Esc><Cmd>ToggleTerm direction=horizontal<CR>") -- 打开底部终端（编辑模式）
 keymap.set("t", "<C-q>", "<C-\\><C-n>") -- 切换终端模式
