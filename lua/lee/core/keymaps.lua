@@ -125,8 +125,10 @@ keymap.set("v", "<S-l>", ":MoveHBlock(1)<CR>", opts)
 keymap.set("n", "<leader>w", "<Cmd>HopWord<CR>")
 keymap.set("n", "<leader>j", "<Cmd>HopLine<CR>")
 keymap.set("n", "<leader>k", "<Cmd>HopLine<CR>")
-keymap.set("n", "<leader>c", "<Cmd>HopChar1<CR>")
-keymap.set("n", "<leader>cc", "<Cmd>HopChar2<CR>")
+keymap.set("n", "<CR>", "<Cmd>HopChar1<CR>")
+keymap.set("n", "<CR><CR>", "<Cmd>HopChar2<CR>")
+keymap.set("n", "<Tab>", "%")
+keymap.set("v", "<Tab>", "%")
 
 -- Visual-mode commands
 keymap.set("v", "<leader>w", "<Cmd>HopWord<CR>")
