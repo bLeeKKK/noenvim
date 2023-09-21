@@ -43,10 +43,10 @@ keymap.set("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>") -- 跳转到窗�
 keymap.set("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>") -- 跳转到窗口9
 
 -- Resize with arrows
-keymap.set("n", "<A-Up>", ":resize -2<CR>")
-keymap.set("n", "<A-Down>", ":resize +2<CR>")
-keymap.set("n", "<A-Left>", ":vertical resize -2<CR>")
-keymap.set("n", "<A-Right>", ":vertical resize +2<CR>")
+keymap.set("n", "<A-Up>", ":resize +2<CR>")
+keymap.set("n", "<A-Down>", ":resize -2<CR>")
+keymap.set("n", "<A-Left>", ":vertical resize +2<CR>")
+keymap.set("n", "<A-Right>", ":vertical resize -2<CR>")
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>") -- increment
@@ -71,7 +71,8 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>e", ":NvimTreeOpen<CR>") -- toggle file explorer
+keymap.set("n", "<leader>oo", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- 查找当前工作目录下的文件，遵守 .gitignore 所忽略的文件

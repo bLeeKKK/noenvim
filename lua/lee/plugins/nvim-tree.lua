@@ -74,8 +74,11 @@ nvimtree.setup({
     },
   },
   view = {
-    width = 30,
-    side = "left",
+    -- float = {
+    --   enable = true,
+    -- },
+    width = 40,
+    side = "right",
     -- mappings = {
     --   list = {
     --     { key = { "l", "<CR>", "o" }, cb = tree_cb("edit") },
@@ -84,9 +87,9 @@ nvimtree.setup({
     --   },
     -- },
   },
-  -- 	git = {
-  -- 		ignore = false,
-  -- 	},
+  git = {
+    ignore = false,
+  },
 })
 
 -- open nvim-tree on setup

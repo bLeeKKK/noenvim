@@ -57,7 +57,7 @@ return packer.startup(function(use)
   --  打注释
   use("numToStr/Comment.nvim")
 
-  -- file explorer
+  -- 文件资源管理器
   use("nvim-tree/nvim-tree.lua")
 
   -- vs-code like icons
