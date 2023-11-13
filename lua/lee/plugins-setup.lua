@@ -186,6 +186,9 @@ return packer.startup(function(use)
   -- use("matze/vim-move")
   use("fedepujol/move.nvim")
 
+  -- jsodoc插件
+  use("heavenshell/vim-jsdoc")
+
   -- 横向快速移动光标
   use({
     "jinh0/eyeliner.nvim",

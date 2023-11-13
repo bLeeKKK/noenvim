@@ -28,7 +28,8 @@ keymap.set("v", "p", '"_dP')
 -- 切换 buffers
 keymap.set("n", "<C-Tab>", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<C-S-Tab>", ":BufferLineCyclePrev<CR>")
-keymap.set("n", "<C-w>", ":Bdelete<CR>") -- 关闭当前窗口
+keymap.set("n", "<C-q>", ":q<CR>") -- 关闭当前窗口
+keymap.set("n", "<C-w>", ":Bdelete<CR>") -- 关闭当前文件
 keymap.set("n", "<C-a>", ":bufdo :Bdelete<CR>") -- 关闭全部
 keymap.set("n", "<C-o>", ":BufferLineCloseOthers<CR>") -- 关闭全部
 keymap.set("n", "<leader>p", ":BufferLinePick<CR>") -- pick切换
@@ -77,7 +78,7 @@ keymap.set("n", "<leader>oo", ":NvimTreeToggle<CR>") -- toggle file explorer
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- 查找当前工作目录下的文件，遵守 .gitignore 所忽略的文件
 keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>") -- 键入时在当前工作目录中查找字符串
-keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
+keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- 在当前工作目录中查找光标下的字符串
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
@@ -85,7 +86,7 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
 -- keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
 -- keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
--- keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
+keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
