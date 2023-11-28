@@ -226,6 +226,8 @@ return packer.startup(function(use)
     end,
   })
 
+  use({ "iamcco/markdown-preview.nvim" })
+
   if packer_bootstrap then
     require("packer").sync()
   end
