@@ -51,7 +51,17 @@ return packer.startup(function(use)
   use("szw/vim-maximizer") -- maximizes and restores current window
 
   -- essential plugins
-  use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+  -- 修改目标周围(https://github.com/kylechui/nvim-surround?tab=readme-ov-file)
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end,
+  })
+  -- use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
   --  打注释
