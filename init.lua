@@ -27,6 +27,7 @@ else
   require("lee.plugins.gitsigns")
   require("lee.plugins.toggleterm")
   require("lee.plugins.copilot")
+  require("lee.plugins.smartyank")
   -- require("lee.plugins.cleverf")
   require("lee.plugins.comment")
   require("lee.plugins.bufferline")

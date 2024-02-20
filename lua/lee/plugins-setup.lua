@@ -238,6 +238,9 @@ return packer.startup(function(use)
 
   use({ "iamcco/markdown-preview.nvim" })
 
+  -- 选中文本后高亮闪烁
+  use({ "ibhagwan/smartyank.nvim" })
+
   if packer_bootstrap then
     require("packer").sync()
   end
