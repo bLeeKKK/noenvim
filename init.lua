@@ -35,5 +35,6 @@ else
   require("lee.plugins.accelerated-jk")
   require("lee.plugins.colorizer")
   require("lee.plugins.hop")
+  require("lee.plugins.move-nvim")
   -- require("lee.plugins.tabout")
 end
