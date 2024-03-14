@@ -49,8 +49,14 @@ telescope.setup({
     --   -- find command (defaults to `fd`)
     --   find_cmd = "rg",
     -- },
+    extensions = {
+      persisted = {
+        layout_config = { width = 0.55, height = 0.55 },
+      },
+    },
   },
 })
 
 -- telescope.load_extension("media_files")
 telescope.load_extension("fzf")
+telescope.load_extension("persisted")

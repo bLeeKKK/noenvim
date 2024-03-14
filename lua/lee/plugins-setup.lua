@@ -241,6 +241,14 @@ return packer.startup(function(use)
   -- 选中文本后高亮闪烁
   use({ "ibhagwan/smartyank.nvim" })
 
+  -- Lua
+  use({
+    "olimorris/persisted.nvim",
+    config = function()
+      require("persisted").setup()
+    end,
+  })
+
   if packer_bootstrap then
     require("packer").sync()
   end
