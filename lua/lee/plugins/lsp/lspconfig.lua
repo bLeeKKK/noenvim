@@ -35,7 +35,7 @@ local on_attach = function(client, bufnr)
   keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- 查看可用的代码操作
   keymap.set("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- 显示行诊断信息
   keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- 显示光标的诊断信息
-  keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- 见右手边的轮廓
+  -- keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- 见右手边的轮廓
 
   -- typescript specific keymaps (e.g. rename file and update imports)
   if client.name == "tsserver" then
