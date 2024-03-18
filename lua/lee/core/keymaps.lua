@@ -129,8 +129,21 @@ keymap.set("n", "<leader>j", "<Cmd>HopLine<CR>")
 keymap.set("n", "<leader>k", "<Cmd>HopLine<CR>")
 keymap.set("n", "<leader><CR>", "<Cmd>HopChar1<CR>")
 keymap.set("n", "<leader><CR><CR>", "<Cmd>HopChar2<CR>")
-keymap.set("n", "<Tab>", "%")
-keymap.set("v", "<Tab>", "%")
+
+-- vim-matchup使用Tab键在匹配的字符对之间跳转
+keymap.set("n", "<Tab>", "<Plug>(matchup-%)")
+keymap.set("n", "<S-Tab>", "<Plug>(matchup-g%)")
+-- keymap.set("n", "[<Tab>", "<Plug>(matchup-[%)")
+-- keymap.set("n", "]<Tab>", "<Plug>(matchup-]%)")
+keymap.set("v", "<Tab>", "<Plug>(matchup-%)")
+keymap.set("v", "<S-Tab>", "<Plug>(matchup-g%)")
+-- keymap.set("v", "[<Tab>", "<Plug>(matchup-[%)")
+-- keymap.set("v", "]<Tab>", "<Plug>(matchup-]%)")
+-- keymap.set("n", "z<Tab>", "<Plug>(matchup-z%)")
+-- keymap.set("n", "a<Tab>", "<Plug>(matchup-a%)")
+-- keymap.set("n", "i<Tab>", "<Plug>(matchup-i%)")
+-- keymap.set("n", "ds<Tab>", "<Plug>(matchup-ds%)")
+-- keymap.set("n", "cs<Tab>", "<Plug>(matchup-cs%)")
 
 -- Visual-mode commands
 keymap.set("v", "<leader>w", "<Cmd>HopWord<CR>")

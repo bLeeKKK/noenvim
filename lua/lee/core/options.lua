@@ -41,8 +41,12 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.iskeyword:append("-") -- consider string-string as whole word
 
 -- 定义匹配的字符对
-vim.o.matchpairs = vim.o.matchpairs .. ",<:>"
+-- vim.o.matchpairs = vim.o.matchpairs .. ",<:>"
+-- opt.matchpairs:append("<:>")
+-- vim.g.matchup_matchparen_offscreen = {}
+-- vim.g.matchup_matchparen_deferred = {}
 -- -- 启用 % 键在匹配的字符对之间跳转
 -- vim.cmd([[
 --   autocmd FileType * setlocal matchpairs+=%:
 -- ]])
+-- lvim.builtin.treesitter.matchup.enable = true

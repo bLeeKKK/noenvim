@@ -6,6 +6,10 @@ end
 
 -- configure treesitter
 treesitter.setup({
+  matchup = {
+    enable = true, -- mandatory, false will disable the whole extension
+    disable = { "c", "ruby" }, -- optional, list of language that will be disabled
+  },
   -- enable syntax highlighting
   highlight = {
     enable = true,
