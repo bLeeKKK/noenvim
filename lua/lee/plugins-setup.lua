@@ -143,6 +143,8 @@ return packer.startup(function(use)
       require("copilot_cmp").setup()
     end,
   })
+  use({ "nvim-lua/plenary.nvim" })
+  use({ "CopilotC-Nvim/CopilotChat.nvim" })
 
   --  加强版的f
   use({ "rhysd/clever-f.vim" })
@@ -182,6 +184,7 @@ return packer.startup(function(use)
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use("tpope/vim-fugitive")
 
   -- 缩紧的线，和空格的提示
   use("lukas-reineke/indent-blankline.nvim")
