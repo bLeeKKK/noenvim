@@ -42,7 +42,7 @@ return packer.startup(function(use)
 
   use("nvim-lua/popup.nvim")
 
-  use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
+  -- use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 
@@ -259,6 +259,14 @@ return packer.startup(function(use)
       -- may set any options here
       vim.g.matchup_matchparen_offscreen = { method = "popup" }
     end,
+  })
+
+  -- 滚动条滚动更加平滑
+  use({
+    "karb94/neoscroll.nvim",
+    -- config = function()
+    --   require("neoscroll").setup()
+    -- end,
   })
 
   if packer_bootstrap then

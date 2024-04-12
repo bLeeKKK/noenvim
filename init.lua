@@ -37,4 +37,5 @@ else
   require("lee.plugins.hop")
   require("lee.plugins.move-nvim")
   -- require("lee.plugins.tabout")
+  require("lee.plugins.neoscroll")
 end
