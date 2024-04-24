@@ -76,7 +76,7 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = "copilot", group_index = 2 }, -- Copilot Source
     { name = "nvim_lsp" }, -- lsp
-    { name = "luasnip" }, -- snippets
+    { name = "luasnip" }, -- snippets 代码片段
     { name = "buffer" }, -- text within current buffer
     { name = "path" }, -- file system paths
   }),

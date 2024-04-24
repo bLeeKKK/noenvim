@@ -98,8 +98,8 @@ return packer.startup(function(use)
   use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
   -- configuring lsp servers
-  use("neovim/nvim-lspconfig") -- easily configure language servers
-  use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+  use("neovim/nvim-lspconfig") -- 安装并配置语言服务器。可以手动安装服务 ,查看服务列表 :help lspconfig-all
+  use("hrsh7th/cmp-nvim-lsp") -- 请求lsp服务自动补全
   use({
     "glepnir/lspsaga.nvim",
     branch = "main",
@@ -109,7 +109,7 @@ return packer.startup(function(use)
     },
   }) -- enhanced lsp uis
   use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
-  use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+  use("onsails/lspkind.nvim") -- 自动补全的图标展示，类似vscode自动补全的补全 vs-code like icons for autocompletion
 
   -- formatting & linting
   use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
