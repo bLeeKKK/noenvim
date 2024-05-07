@@ -1,5 +1,8 @@
 local opt = vim.opt -- for conciseness
 
+vim.g.copilot_proxy = "127.0.0.1:1087" -- vim.env.HTTPS_PROXY or vim.env.HTTP_PROXY
+print("Copilot代理：" .. vim.g.copilot_proxy)
+
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
