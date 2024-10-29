@@ -112,15 +112,15 @@ keymap.set("n", "k", "<Plug>(accelerated_jk_gk)", {})
 -- Normal-mode commands: 上下左右移动代码
 keymap.set("n", "<S-j>", ":MoveLine(1)<CR>", opts)
 keymap.set("n", "<S-k>", ":MoveLine(-1)<CR>")
-keymap.set("n", "<S-h>", ":MoveHChar(-1)<CR>", opts)
-keymap.set("n", "<S-l>", ":MoveHChar(1)<CR>", opts)
+-- keymap.set("n", "<S-h>", ":MoveHChar(-1)<CR>", opts)
+-- keymap.set("n", "<S-l>", ":MoveHChar(1)<CR>", opts)
 keymap.set("n", "<leader>wf", ":MoveWord(1)<CR>", opts)
 keymap.set("n", "<leader>wb", ":MoveWord(-1)<CR>", opts)
 -- Visual-mode commands: 上下左右移动代码块
 keymap.set("v", "<S-j>", ":MoveBlock(1)<CR>", opts)
 keymap.set("v", "<S-k>", ":MoveBlock(-1)<CR>", opts)
-keymap.set("v", "<S-h>", ":MoveHBlock(-1)<CR>", opts)
-keymap.set("v", "<S-l>", ":MoveHBlock(1)<CR>", opts)
+-- keymap.set("v", "<S-h>", ":MoveHBlock(-1)<CR>", opts)
+-- keymap.set("v", "<S-l>", ":MoveHBlock(1)<CR>", opts)
 
 -- hop 快速移动光标
 -- Normal-mode commands
