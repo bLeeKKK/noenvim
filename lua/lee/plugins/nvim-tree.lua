@@ -77,7 +77,7 @@ nvimtree.setup({
     -- float = {
     --   enable = true,
     -- },
-    width = 40,
+    width = 30,
     side = "right",
     -- mappings = {
     --   list = {
