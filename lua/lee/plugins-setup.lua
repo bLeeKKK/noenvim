@@ -124,7 +124,7 @@ return packer.startup(function(use)
     end,
   })
   -- use("p00f/nvim-ts-rainbow")
-  use("HiPhish/nvim-ts-rainbow2")
+  -- use("HiPhish/nvim-ts-rainbow2")
   use("nvim-treesitter/playground")
   use("JoosepAlviste/nvim-ts-context-commentstring")
 
